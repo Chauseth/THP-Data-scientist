@@ -17,8 +17,10 @@ puts "La valeur minimale dans la Hash est : "
 print valeur_min
 puts 
 puts "Voici les monnaies valant moins de 6000 : "
-puts less_sixthousands
+less_sixthousands.each { |key, value|
+    print "| #{key} - #{value}  |"
+
+}
 puts
 puts "Voici la monnaie la plus élevée ne dépassant pas 6000"
 puts max_less_sixthousands
-
